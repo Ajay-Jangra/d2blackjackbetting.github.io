@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="index.css" />
+    <title>blackjack-using-js</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Black-Jack</h2>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+          >
+        <!-- <a onclick="logout()" >Logout</a> -->
+        <a onClick="howToPlay()">How to play</a>
+        <div id="howtoplay" class="howtoplay active ">If a player's first two cards are an ace and a "ten-card" (a picture card or 10), giving a count of 21 in two cards, this is a natural or "blackjack." If any player has a natural and the dealer does not, the dealer immediately pays that player one and a half times the amount of their bet.</div>
+        <a onClick="openContacts()">Contacts</a>
+        <div id="contacts" class="contacts active ">
+          <div style="display: flex;flex-direction: row; flex-wrap: nowrap; justify-content: space-around; align-items: center; ">
+            <a href="https://www.linkedin.com/in/ajay-jangra-376ba1202/" target= _blank>Linked In</a>
+            <a href="https://github.com/Ajay-Jangra"  target= _blank>Github</a>
+          </div>
+          <div style="display: flex; justify-content:center; align-items: center;  margin: 20px ;padding: 20px; " >
+            <h3 style="padding-right: 30px;">Email:-</h3> 
+            <p style="font-size: 12px; color: red;padding-left: 30px;" >ajayjangrarakhi@gmail.com </p></div>
+        </div>
+      </div>
+      <h3><span id="blackjack-result">Let's Play</span></h3>
+      <div class="flex-blackjack-row-1">
+        <div id="your-box">
+          <h2>You: <span id="your-blackjack-result">0</span></h2>
+        </div>
+        <div id="dealer-box">
+          <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+        </div>
+      </div>
+      <div class="flex-blackjack-row-2">
+        <div class="d-flex">
+          <button
+            class="btn btn-lg mr-2 btn-warning"
+            id="blackjack-stand-button"
+          >
+            Stand
+          </button>
+          <button class="btn btn-lg mr-2 btn-primary" id="blackjack-hit-button">
+            Hit
+          </button>
+          <button class="btn btn-lg btn-danger" id="blackjack-deal-button">
+            Deal
+          </button>
+        </div>
+      </div>
+      <div class="flex-blackjack-row-3">
+        <table>
+          <tbody>
+            <tr>
+              <th>Wins</th>
+              <th>Losses</th>
+              <th>Draws</th>
+            </tr>
+            <tr>
+              <td><span id="wins">0</span></td>
+              <td><span id="losses">0</span></td>
+              <td><span id="draws">0</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+          >&#9776;</span
+        >
+      </div>
+    </div>
+
+    <!-- script added -->
+     <!-- <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="../Firebase/firebase.js "></script> -->
+    <script src="index.js"></script>
+     
+  </body>
+</html>

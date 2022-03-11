@@ -1,0 +1,113 @@
+* {
+  padding: 5px;
+  /* border-radius: 30px; */
+}
+body {
+  background-color: rgb(80, 97, 177);
+}
+/* side bar */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -10px;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav .active{
+  width: 50%;
+  padding: 20px;
+  font-size: 14px;
+  color: #f1f1f1;
+  display:none;
+  margin: 5px auto;
+  border: 1px solid #fff; 
+  border-radius: 20px;  
+}
+
+.sidenav a {
+  cursor: pointer;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* how to play  */
+.howToPlay{
+  display: none;
+}
+.howToPlay:hover,.howToPlay:focus{
+  display: block;
+}
+ 
+/* black-jack css */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: rgb(20, 18, 14);
+  font-family: "Monoton";
+  color: rgb(0, 153, 255);
+}
+.flex-blackjack-row-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  border: 1px solid Black;
+  padding: 20px;
+  background-color: rgb(65, 59, 59);
+}
+.flex-blackjack-row-2 {
+  flex-wrap: wrap-reverse;
+  border: 1px solid Black;
+  padding: 20px;
+  background-color: rgb(65, 59, 59);
+}
+.flex-blackjack-row-1 div {
+  border: 1px solid black;
+  min-width: 250px;
+
+  padding: 10px;
+  height: 200px;
+  flex: 1;
+  text-align: center;
+}
+.flex-blackjack-row-2 div,.flex-blackjack-row-3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-blackjack-row-1 img {
+  background-color: white;
+  border-radius: 5px;
+  height: 120px;
+  margin-left: -50px;
+  margin-bottom: 10px;
+}
