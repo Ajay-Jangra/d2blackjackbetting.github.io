@@ -1,20 +1,4 @@
-// challenge 5 blackjack
-
-// authantication 
-
-// firebase.auth().onAuthStateChanged((user) => {
-//   if (!user) {
-//     location.replace("../auth/index.html");
-//   }  
-// });
-
-// function logout() {
-//   firebase.auth().signOut();
-// }
  
-
-
-
 //side bar
 function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
@@ -273,9 +257,3 @@ function showResult(winner) {
     document.querySelector("#blackjack-result").style.color = messageColor;
   }
 }
-
-
-
-
-
- 
